@@ -31,10 +31,12 @@ git submodule update --init --recursive
 ```bash
 cd fusion-harness
 cp .env.example .env   # if present; or export provider keys
-just fh-workhorse      # cheap test pair
-# just fh-sota         # frontier pair
+just fh-workhorse      # cheap test pair (pi backends)
+just fh-sota-sub       # architect via Claude Code `claude -p` (subscription usage)
+# just fh-sota         # frontier pair on pi backends
 ```
 
+Child backends: `--architect-backend pi|claude-cli` and `--builder-backend pi|claude-cli`.
 See [`fusion-harness/README.md`](./fusion-harness/README.md) for commands, architecture, and flags.
 
 ## Submodules
