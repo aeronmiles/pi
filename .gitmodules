@@ -1,0 +1,3 @@
+[submodule "fusion-harness"]
+	path = fusion-harness
+	url = git@github.com:aeronmiles/fusion-harness.git
